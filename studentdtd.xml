@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE students[
+<!ELEMENT students (student?)>
+<!ELEMENT student (name,group)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT group (#PCDATA)>
+<!ATTLIST name id CDATA #REQUIRED>
+<!ATTLIST group gid ID #FIXED "1117">
+<!--implied,(x|y)-->
+]>
+<students>
+<student>
+<name id="001">jon</name>
+<group gid="1117">bsc</group>
+</student>
+<student>
+<name>bob</name>
+<group gid="001">bcom</group>
+</student>
+
+</students>

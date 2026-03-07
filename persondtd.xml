@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE human[
+<!ELEMENT human (person)>
+<!ELEMENT person (name,age)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ATTLIST person gender CDATA #REQUIRED>
+
+<!--implied,(x|y)-->
+]>
+<human>
+<person gender="male">
+<name>sss</name>
+<age>23</AGE>
+</person>
+</human>

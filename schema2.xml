@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="library">
+        <xsd:complextype>
+              <xsd:sequence>
+                <xsd:element name="book" maxOccurs="unbounded">
+                <xsd:complextype>
+		  <xsd:sequence>
+		   <xsd:element name="title" type="xsd:string"/>
+		   <xsd:element name="author" type="xsd:string" maxOccurs="unbounded"/>
+		  </xsd:sequence>
+                </xsd:complextype>
+	
+		</xsd:element>
+		</xsd:sequence>
+		<xsd:attribute name="owner" type="xsd:string" use="required"/>
+                </xsd:complextype>
+</xsd:element>
+</xsd:schema>
