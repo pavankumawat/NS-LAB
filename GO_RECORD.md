@@ -255,7 +255,7 @@ fmt.Println("Sum of row", i+1, ":", row_sum)
 fmt.Println("\nColumn sums:")
 for i = 0; i < 3; i++ {
 col_sum = 0
-for j := 0; j < 3; j++ {
+for j = 0; j < 3; j++ {
 col_sum = col_sum + a[j][i]
 }
 fmt.Println("Sum of column", i+1, ":", col_sum)
